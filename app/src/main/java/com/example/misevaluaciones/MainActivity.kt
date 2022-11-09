@@ -38,7 +38,7 @@ class MainActivity : ComponentActivity() {
                     Log.i("MainActivity", cont.toString()) //pintaremos esto cada seg
                     cont += 1
                     countState.value = cont
-                    Thread.sleep(1000L) //parar suspender el hilo por 1000 Miliseg
+                    Thread.sleep(1000L) //parar suspender el hilo por 1000 Milisegs
                 }
             }
 
