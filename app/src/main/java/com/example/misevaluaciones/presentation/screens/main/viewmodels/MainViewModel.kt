@@ -19,7 +19,7 @@ class MainViewModel : ViewModel() {
 
     fun getCarreras() {
 
-        //El contexto de vida del viewModelScope persiste más tiempo que el del LaunchedEffect, o sea, de un Screen "@composable MainScreen"
+        //El contexto de vida del viewModelScope persiste más tiempo que el del LaunchedEffect, es decir, de un Screen "@composable MainScreen"
         viewModelScope.launch {
             //Se realiza la conexión remota
             var lista = withContext(Dispatchers.IO) {
