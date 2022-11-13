@@ -1,6 +1,7 @@
 package com.example.misevaluaciones.model.remote
 
 import com.example.misevaluaciones.model.entity.Carrera
+import com.example.misevaluaciones.model.entity.LoginResponse
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 
@@ -42,6 +43,13 @@ class HTTPManager {
         return listaCarreras
 
     }
+
+    fun login(cod : String, pass : String) : LoginResponse? {
+        return evaluacionesService.login(cod, pass).execute().body()
+    }
+
+
+
 
 
 }

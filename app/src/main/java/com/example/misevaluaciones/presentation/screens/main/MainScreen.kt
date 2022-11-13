@@ -24,6 +24,7 @@ fun MainScreen(
     vm : MainViewModel = viewModel() //Se instancia a vm como viewModel del tipo MainViewModel si es que desde el MainActivity no se pasa el argumento
 ) {
 
+    //Se llama 1 sola vez a esta función por defecto al cargar este screen
     LaunchedEffect(key1 = true) {
         vm.getCarreras()
     }
