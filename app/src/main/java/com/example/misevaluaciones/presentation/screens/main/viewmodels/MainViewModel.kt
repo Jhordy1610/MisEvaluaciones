@@ -31,7 +31,7 @@ class MainViewModel : ViewModel() {
                     listaCarreras.add(it)
                 }
             } else {
-                Log.e("MainScreen", "Erro de comunicación con el servicio")
+                Log.e("MainScreen", "Error de comunicación con el servicio")
             }
         }
 
